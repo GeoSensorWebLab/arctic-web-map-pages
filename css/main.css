@@ -14,11 +14,9 @@ body {
   font-size: 1.3em !important;
 }
 
-/* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
 }
-/* Make the masthead heading the same height as the navigation */
 .header h3 {
   padding-bottom: 19px;
   margin-top: 0;
@@ -26,14 +24,12 @@ body {
   line-height: 40px;
 }
 
-/* Custom page footer */
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
 
-/* Customize container */
 @media (min-width: 768px) {
   .container {
     max-width: 730px;
@@ -43,14 +39,12 @@ body {
   margin: 30px 0;
 }
 
-/* Main marketing message */
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
-  padding: 1em;
+  padding: 1em !important;
 }
 
-/* Supporting marketing content */
 .marketing {
   margin: 40px 0;
 }
@@ -58,7 +52,6 @@ body {
   margin-top: 28px;
 }
 
-/* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
   .header,
@@ -75,4 +68,9 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+#map-example {
+  height: 300px;
+  width: 100%;
 }

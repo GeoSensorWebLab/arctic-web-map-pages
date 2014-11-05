@@ -10,11 +10,11 @@
 
     <title>Arctic Web Map</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -38,7 +38,7 @@
       </div>
 
       <div class="jumbotron">
-        <h2>Map example goes here</h2>
+        <div id="map-example"></div>
       </div>
 
       <div class="row marketing">
@@ -57,9 +57,16 @@
       </div>
 
     </div> <!-- /container -->
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.3/proj4.js"></script>
+    <script src="js/vendor/proj4leaflet.js"></script>
+    <script src="js/polarmap.js"></script>
+    <script>
+      $(document).ready(function() {
+        var pMap = polarMap('map-example');
+        pMap.map.setZoom(2);
+      });
+    </script>
   </body>
 </html>
