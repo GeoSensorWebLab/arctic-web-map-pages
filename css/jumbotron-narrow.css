@@ -1,15 +1,17 @@
-/* Space out content a bit */
 body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
 .footer {
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.lead {
+  font-size: 1.3em !important;
 }
 
 /* Custom page header */
@@ -41,14 +43,11 @@ body {
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
+/* Main marketing message */
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
+  padding: 1em;
 }
 
 /* Supporting marketing content */
