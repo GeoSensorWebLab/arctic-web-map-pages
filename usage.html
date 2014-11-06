@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Arctic Web Map Tool">
+    <meta name="author" content="James Badger, Arctic Connect">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>Arctic Web Map API and Usage</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right" role="tablist">
+          <li role="presentation"><a href="index.html">Intro</a></li>
+          <li role="presentation"><a href="tiles.html">Tiles</a></li>
+          <li role="presentation"><a href="polarmap.html">PolarMap.js</a></li>
+          <li role="presentation" class="active"><a href="usage.html">Usage/API</a></li>
+          <li role="presentation"><a href="about.html">About</a></li>
+        </ul>
+        <h3 class="text-muted">Arctic Web Map</h3>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Arctic Web Map API and Usage</h1>
+          <p class="lead">We provide multiple options for displaying our tile data across multiple platforms.</p>
+
+          <h3>PolarMap.js</h3>
+
+          <p>Using our JavaScript client library is the recommended way of displaying our tiles for web clients. It provides a easy to use API for drawing maps with custom marker and location data. See the <a href="polarmap.html">PolarMap.js API</a> for more details.</p>
+
+          <h3>Leaflet</h3>
+
+          <p>Our tiles are compatible with Leaflet maps, when used with the Proj4JS and Proj4Leaflet libraries.</p>
+
+          <h3>OpenLayers</h3>
+
+          <p>OpenLayers has support for projected tiles, and can easily be modified to display our Arctic Web Map tiles.</p>
+
+          <h3>Direct Tile Access</h3>
+
+          <p>The URL template for our tiles is <code>http://{s}.tiles.arcticconnect.org/osm_{projection}/{z}/{x}/{y}.png</code>
+            <br>
+            where <code>{s}</code> is either <code>a</code>, <code>b</code> or <code>c</code>,
+            <code>{projection}</code> is one of 3571, 3572, 3573, 3574, 3575 or 3576,
+            <code>{z}</code> is the zoom level,
+            <code>{x}</code> is the tile x-index,
+            and <code>{y}</code> is the tile y-index.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Arctic Web Map is part of the <a href="http://arcticconnect.org">Arctic Connect</a> project. &copy; Arctic Connect 2014</p>
+      </div>
+
+    </div> <!-- /container -->
+  </body>
+</html>
