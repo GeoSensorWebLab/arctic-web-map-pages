@@ -53,17 +53,21 @@
             <li><a href="http://epsg.io/3576">EPSG:3576</a></li>
           </ul>
 
-          <p>These projections provide a Lambert Azimuthal Equal-Area view of the North Pole region, from 45&deg;N to 90&deg;N. Each projection is centred on a specific longitude: 180&deg;W, 150&deg;W, 100&deg;W, 40&deg;W, 10&deg;E, and 90&deg; E.</p>
+          <p>These projections provide a Lambert Azimuthal Equal-Area (LAEA) view of the North Pole region, from 45&deg;N to 90&deg;N. Each projection is centred on a specific longitude: 180&deg;W, 150&deg;W, 100&deg;W, 40&deg;W, 10&deg;E, and 90&deg; E.</p>
+
+          <p>Using this projection means areas near the centre of the map (the North Pole) will not be distorted as they are when viewed in a Mercator projection such as Google Maps, Bing Maps, or OpenStreetMap. The LAEA projection we use specifically preserves the area of land masses such that relative size can be determined, but it does distort the shape of land masses towards the edges of the map. This is why the map is cut off at 45&deg; N.</p>
 
           <h3>Coverage</h3>
 
           <p>We currently provide data for the region North of 45&deg;N.</p>
 
+          <p><img src="images/coverage.png" class="img-responsive center-block" alt="" /></p>
+
           <h3>Included Data</h3>
 
           <p>Tiles include data from multiple data sources. Most of the layers, including locations, land uses, roads, buildings, etc. is from OpenStreetMap under the <a href="http://opendatacommons.org/licenses/odbl/">Open Data Commons Open Database License</a> (ODbL). Land polygons are also from OpenStreetMap.</p>
 
-          <p>Administrative boundaries and geographic lines are courtesy of <a href="http://www.naturalearthdata.com/">Natural Earth</a>.</p>
+          <p>Administrative boundaries, geographic lines, bathymetry data layers are courtesy of <a href="http://www.naturalearthdata.com/">Natural Earth</a>.</p>
 
           <h3>Tile Usage Policy</h3>
 
