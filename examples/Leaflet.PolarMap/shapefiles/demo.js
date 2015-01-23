@@ -65,6 +65,7 @@ $(document).ready(function() {
     }
   });
 
+  map.addLayer(glaciated);
   layersControl.addOverlay(glaciated, "Glaciated Areas");
 
   // Wire up rotation controls
