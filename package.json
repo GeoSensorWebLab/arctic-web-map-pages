@@ -14,6 +14,6 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/geosensorweblab/arctic-web-map-pages#readme",
   "dependencies": {
-    "harp": "^0.17.0"
+    "harp": "^0.15.0"
   }
 }
