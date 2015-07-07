@@ -1,0 +1,19 @@
+{
+  "name": "arctic-web-map-pages",
+  "version": "1.0.0",
+  "description": "This repository contains the HTML, CSS, and JavaScript for the promotional site for Arctic Web Map.",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/geosensorweblab/arctic-web-map-pages.git"
+  },
+  "author": "James Badger <jpbadger@ucalgary.ca>",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/geosensorweblab/arctic-web-map-pages#readme",
+  "dependencies": {
+    "harp": "^0.17.0"
+  }
+}
