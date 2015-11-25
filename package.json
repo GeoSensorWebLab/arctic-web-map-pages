@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/geosensorweblab/arctic-web-map-pages.git"
+    "url": "https://github.com/GeoSensorWebLab/arctic-web-map-pages"
   },
   "author": "James Badger <jpbadger@ucalgary.ca>",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/geosensorweblab/arctic-web-map-pages#readme",
+  "homepage": "https://github.com/GeoSensorWebLab/arctic-web-map-pages",
   "dependencies": {
     "harp": "^0.15.0"
   }
