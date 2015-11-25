@@ -4,7 +4,7 @@
   "description": "This repository contains the HTML, CSS, and JavaScript for the promotional site for Arctic Web Map.",
   "main": "public/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=production node index.js"
   },
   "repository": {
     "type": "git",
@@ -14,6 +14,9 @@
   "license": "ISC",
   "homepage": "https://github.com/GeoSensorWebLab/arctic-web-map-pages",
   "dependencies": {
-    "harp": "^0.15.0"
+    "harp": "*"
+  },
+  "engines": {
+    "node": "0.10.x"
   }
 }
