@@ -2,7 +2,7 @@
 
 This repository contains the HTML, CSS, and JavaScript for the promotional site for Arctic Web Map.
 
-It is built with Bootstrap 3 and PolarMap.js 1.0.1.
+It is built with Bootstrap 3 and PolarMap.js 1.1.0.
 
 ## Local Testing
 
