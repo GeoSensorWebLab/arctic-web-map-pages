@@ -11,8 +11,8 @@
     <title>Arctic Web Map</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/polarmap.css" rel="stylesheet">
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" rel="stylesheet">
+    <link href="polarmap.js/css/leaflet.css" rel="stylesheet">
+    <link href="polarmap.js/css/polarmap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
@@ -61,7 +61,11 @@
       </div>
 
     </div> <!-- /container -->
-    <script src="js/app.min.js"></script>
+    <script src="polarmap.js/js/jquery.js"></script>
+    <script src="polarmap.js/js/leaflet.js"></script>
+    <script src="polarmap.js/js/proj4.js"></script>
+    <script src="polarmap.js/js/proj4leaflet.js"></script>
+    <script src="polarmap.js/dist/polarmap.js"></script>
     <script>
       $(document).ready(function() {
         var pMap = polarMap('map-example');
