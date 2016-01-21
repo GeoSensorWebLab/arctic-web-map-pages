@@ -1,0 +1,3 @@
+[submodule "public/polarmap.js"]
+	path = public/polarmap.js
+	url = https://github.com/GeoSensorWebLab/polarmap.js.git
