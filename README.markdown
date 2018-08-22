@@ -6,12 +6,12 @@ It is built with Bootstrap 3 and PolarMap.js 1.2.1.
 
 ## Local Testing
 
-Use `harp` for node:
+Use `express` for Node.js:
 
-    $ npm install -g harp
-    $ harp server
+    $ npm install
+    $ node index.js
 
-Then a local instance should be available at http://localhost:9000/.
+Then a local instance should be available at http://localhost:5000/.
 
 ## License
 

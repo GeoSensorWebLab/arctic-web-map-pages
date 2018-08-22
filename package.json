@@ -14,7 +14,7 @@
   "license": "ISC",
   "homepage": "https://github.com/GeoSensorWebLab/arctic-web-map-pages",
   "dependencies": {
-    "harp": "*"
+    "express": "^4.16.3"
   },
   "engines": {
     "node": "6.10.x",

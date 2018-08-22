@@ -1,1 +1,1 @@
-web: harp server --port $PORT --ip 0.0.0.0
+web: PORT=$PORT HOST=0.0.0.0 node index.js
