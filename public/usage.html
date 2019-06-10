@@ -53,22 +53,34 @@
 
           <p><a href="http://openlayers.org/">OpenLayers</a> has support for projected tiles, and can easily be modified to display our Arctic Web Map tiles.</p>
 
-          <h3>Direct Tile Access</h3>
+          <h3>Direct Tile Access (v1.0)</h3>
 
-          <p>The URL template for our tiles is <code>http://{s}.tiles.arcticconnect.ca/osm_{projection}/{z}/{x}/{y}.png</code>
+          <p>The URL template for our tiles is <code>http://tiles.arcticconnect.ca/osm_{projection}/{z}/{x}/{y}.png</code>
             <br>
-            where <code>{s}</code> is either <code>a</code>, <code>b</code> or <code>c</code>,
-            <code>{projection}</code> is one of 3571, 3572, 3573, 3574, 3575 or 3576,
+            where <code>{projection}</code> is one of 3571, 3572, 3573, 3574, 3575 or 3576,
             <code>{z}</code> is the zoom level,
             <code>{x}</code> is the tile x-index,
             and <code>{y}</code> is the tile y-index.
           </p>
 
+          <p>This follows the informal OpenStreetMap tile server naming scheme.</p>
+
+          <h3>Direct Tile Access (v2.0)</h3>
+
+          <p>The URL template for our tiles is <code>http://tiles.arcticconnect.ca/awm/{z}/{x}/{y}.png</code>
+            <br>
+            where <code>{z}</code> is the zoom level,
+            <code>{x}</code> is the tile x-index,
+            and <code>{y}</code> is the tile y-index.
+          </p>
+
+          <p>This follows the informal OpenStreetMap tile server naming scheme.</p>
+
         </div>
       </div>
 
       <div class="footer">
-        <p>Arctic Web Map is part of the <a href="http://arcticconnect.ca">Arctic Connect</a> project. &copy; Arctic Connect 2014&ndash;2018</p>
+        <p>Arctic Web Map is part of the <a href="http://arcticconnect.ca">Arctic Connect</a> project. &copy; Arctic Connect 2014&ndash;2019</p>
       </div>
 
     </div> <!-- /container -->
