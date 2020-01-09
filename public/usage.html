@@ -47,13 +47,15 @@
 
           <h3>Leaflet</h3>
 
-          <p>Our tiles are compatible with <a href="http://leafletjs.com/">Leaflet maps</a>, when used with the <a href="http://proj4js.org/">Proj4JS</a> and <a href="https://github.com/kartena/Proj4Leaflet">Proj4Leaflet</a> libraries.</p>
+          <p>Our v1.0 tiles are compatible with <a href="http://leafletjs.com/">Leaflet maps</a>, when used with the <a href="http://proj4js.org/">Proj4JS</a> and <a href="https://github.com/kartena/Proj4Leaflet">Proj4Leaflet</a> libraries.</p>
 
           <h3>OpenLayers</h3>
 
-          <p><a href="http://openlayers.org/">OpenLayers</a> has support for projected tiles, and can easily be modified to display our Arctic Web Map tiles.</p>
+          <p><a href="http://openlayers.org/">OpenLayers</a> has support for projected tiles, and can easily be modified to display our Arctic Web Map tiles. It has excellent support for accessing tiles via XYZ (OpenStreetMap style) or via WMTS.</p>
 
           <h3>Direct Tile Access (v1.0)</h3>
+
+          <p>The original set of Arctic Web Map tiles generated from 2015 to 2017 and supporting multiple arctic projections can be used directly with compatible clients.</p>
 
           <p>The URL template for our tiles is <code>http://tiles.arcticconnect.ca/osm_{projection}/{z}/{x}/{y}.png</code>
             <br>
@@ -67,6 +69,10 @@
 
           <h3>Direct Tile Access (v2.0)</h3>
 
+          <p>The newer set of Arctic Web Map tiles generated from 2019 OpenStreetMap data can be used directly with compatible clients.</p>
+
+          <h4>XYZ OSM-Style Tiles</h4>
+
           <p>The URL template for our tiles is <code>http://tiles.arcticconnect.ca/awm/{z}/{x}/{y}.png</code>
             <br>
             where <code>{z}</code> is the zoom level,
@@ -75,6 +81,17 @@
           </p>
 
           <p>This follows the informal OpenStreetMap tile server naming scheme.</p>
+
+          <h4>Web Map Tile Service (WMTS)</h4>
+
+          <p>Clients compatible with the <a href="https://en.wikipedia.org/wiki/Web_Map_Tile_Service">Open Geospatial Consortium WMTS standard</a> can access the v2.0 tiles using one of the following Capabilities documents.</p>
+
+          <ul>
+            <li><a href="https://tiles.arcticconnect.ca/mapproxy/service?REQUEST=GetCapabilities&SERVICE=WMTS">KVP Capabilities (XML)</a></li>
+            <li><a href="https://tiles.arcticconnect.ca/mapproxy/wmts/1.0.0/WMTSCapabilities.xml">RESTful Capabilities (XML)</a></li>
+          </ul>
+
+          <p>Accessing v2.0 tiles via WMTS or XYZ will use the same source OSM data, and tiles are rendered to images using Mapnik, therefore the map should look nearly identical when accessed via WMTS or XYZ.</p>
 
         </div>
       </div>
